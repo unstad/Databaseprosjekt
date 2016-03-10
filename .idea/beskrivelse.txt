@@ -1,0 +1,8 @@
+JDBC er meningen å bruke i java for å koble til databasen dere setter opp,
+for så å kunne sette inn verdier eller hente ut (Select * from treningsøkt).
+Når det gjelder hvordan å bruke JDBC så må dere nesten prøve å google dere
+litt fram til det. Å komme i gang i en javafil gjøres ved å
+importere java.sql.* i tillegg til å legge til en driver (.jar fil) som
+external library i prosjektet deres. Etter å ha lastet ned den
+høyreklikker du på prosjektet -> bulid path -> libraries -> add external
+jars og finn den .jar filen du lastet ned.
