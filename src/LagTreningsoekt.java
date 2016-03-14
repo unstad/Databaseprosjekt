@@ -15,7 +15,7 @@ public class LagTreningsoekt extends DBConn {
         try {
             conn.setAutoCommit(false);
         } catch (SQLException e) {
-            System.out.println("db error during setAuoCommit of LagAvtaleCtrl="+e);
+            System.out.println("db error during setAuoCommit of LagTreningsoekt="+e);
             return;
         }
     }

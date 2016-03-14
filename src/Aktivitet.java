@@ -38,7 +38,7 @@ public class Aktivitet extends ActiveDomainObject{
             }
 
         } catch (Exception e) {
-            System.out.println("db error during select of avtale= "+e);
+            System.out.println("db error during select of aktivitet= "+e);
             return;
         }
 
@@ -56,7 +56,7 @@ public class Aktivitet extends ActiveDomainObject{
             stmt.executeUpdate("insert into treningsøkt values ("+navn +","+beskrivelse +","+maal+","+resultat+","
                     +muskelgrupper+")");
         } catch (Exception e) {
-            System.out.println("db error during insert of Avtale="+e);
+            System.out.println("db error during insert of Aktivitet="+e);
             return;
         }
     }
