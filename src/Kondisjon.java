@@ -25,7 +25,7 @@ public class Kondisjon extends Resultat{
                 lengde =  rs.getInt(lengde);
                 puls = rs.getInt(puls);
                 avstand = rs.getInt(avstand);
-                motstand=rs.getInt(motstand)
+                motstand=rs.getInt(motstand);
             }
 
         } catch (Exception e) {
@@ -50,6 +50,4 @@ public class Kondisjon extends Resultat{
             return;
         }
     }
-}
-
 }

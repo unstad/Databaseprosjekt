@@ -1,6 +1,3 @@
-/**
- * Created by Galina on 14.03.2016.
- */
 import java.sql.SQLException;
 import java.sql.*;
 

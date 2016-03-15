@@ -5,12 +5,13 @@ import java.sql.Statement;
 public class Styrkeoevelse extends Resultat{
     private int belastning, repitisjoner, sett, resultatID;
 
-    public Styrkeoevelse(int belastning, int repitisjoner, int sett, int resultatID){
-        this.belastning=belastning;
-        this.repitisjoner=repitisjoner;
-        this.sett=sett;
-        this.resultatID=resultatID;
+    public Styrkeoevelse(int resultatID, int oektID, String aktivitetNavn, int repitisjoner, int belastning, int sett, int resultatID1) {
+        super(resultatID, oektID, aktivitetNavn);
+        this.repitisjoner = repitisjoner;
+        this.belastning = belastning;
+        this.sett = sett;
     }
+
     //init: gjør tabellen tilgjenglig
     // Hvordan arve nøkkel??
     @Override
