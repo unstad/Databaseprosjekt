@@ -1,5 +1,5 @@
-/**
- * Created by Galina on 14.03.2016.
- */
 public class Langkjoering extends Kondisjon {
+    public Langkjoering(int resultatID, int oektID, String aktivitetNavn, int puls, int lengde, int avstand, int motstand) {
+        super(resultatID, oektID, aktivitetNavn, puls, lengde, avstand, motstand);
+    }
 }

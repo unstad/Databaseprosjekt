@@ -2,17 +2,16 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Created by Galina on 14.03.2016.
- */
 public class Kondisjon extends Resultat{
-    private int lengde, puls, avstand, motstand;
+    public int lengde, puls, avstand, motstand;
 
-    public Kondisjon(int lengde,int puls, int avstand, int motstand){
-        this.lengde=lengde;
-        this.puls=puls;
-        this.avstand=avstand;
-        this.motstand=motstand;
+    public Kondisjon(int resultatID, int oektID, String aktivitetNavn, int puls, int lengde, int avstand, int motstand) {
+        super(resultatID, oektID, aktivitetNavn);
+        this.puls = puls;
+        this.lengde = lengde;
+        this.avstand = avstand;
+        this.motstand = motstand;
+        this.resultatID = resultatID;
     }
 
     //init: gjør tabellen tilgjenglig

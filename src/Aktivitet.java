@@ -2,9 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.sql.*;
 
-/**
- * Created by Galina on 14.03.2016.
- */
 public class Aktivitet extends ActiveDomainObject{
     private String navn;
     private String beskrivelse;

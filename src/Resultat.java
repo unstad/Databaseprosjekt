@@ -2,12 +2,9 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Created by Galina on 14.03.2016.
- */
 public class Resultat extends ActiveDomainObject{
-    private int resultatID, oektID;
-    private String aktivitetNavn;
+    public int resultatID, oektID;
+    public String aktivitetNavn;
 
     public Resultat(int resultatID, int oektID, String aktivitetNavn){
         this.resultatID=resultatID;

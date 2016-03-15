@@ -2,9 +2,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- * Created by Galina on 14.03.2016.
- */
 public class Styrkeoevelse extends Resultat{
     private int belastning, repitisjoner, sett, resultatID;
 

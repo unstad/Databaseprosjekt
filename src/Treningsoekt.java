@@ -2,10 +2,6 @@ import java.io.*;
 import java.sql.*;
 import java.time.LocalDateTime;
 
-
-/**
- * Created by Galina on 14.03.2016.
- */
 public class Treningsoekt extends ActiveDomainObject{
     LocalDateTime ID;
     String notat, luftkvalitet, vaer;
