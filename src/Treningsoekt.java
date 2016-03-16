@@ -8,18 +8,17 @@ public class Treningsoekt extends ActiveDomainObject{
     boolean inne;
     int prestasjon, varighet;
 
-    public Treningsoekt(LocalDateTime ID, String notat, String luftkvalitet, String vaer,
-                        boolean inne, int prestasjon, int varighet) {
-        this.ID = ID;
+    public Treningsoekt(String notat, LocalDateTime ID, String luftkvalitet, boolean inne, String vaer, int varighet, int prestasjon) {
         this.notat = notat;
+        this.ID = ID;
         this.luftkvalitet = luftkvalitet;
-        this.vaer = vaer;
         this.inne = inne;
-        this.prestasjon = prestasjon;
+        this.vaer = vaer;
         this.varighet = varighet;
+        this.prestasjon = prestasjon;
     }
 
-//init: gjør tabellen tilgjenglig
+    //init: gjør tabellen tilgjenglig
     @Override
     public void initialize (Connection conn) {
         try {
