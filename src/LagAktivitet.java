@@ -1,5 +1,6 @@
 import java.sql.SQLException;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class LagAktivitet extends DBConn{
     public  Aktivitet aktivitet;
@@ -17,7 +18,7 @@ public class LagAktivitet extends DBConn{
     }
 
     public void LagAktivitet(String navn, String beskrivelse, String maal,
-                             String resultat, Array muskelgrupper){
+                             String resultat, ArrayList muskelgrupper){
         aktivitet= new Aktivitet(navn, beskrivelse, maal, resultat, muskelgrupper);
     }
 

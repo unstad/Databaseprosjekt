@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.*;
+import java.sql.Array.*;
 
 public class Aktivitet extends ActiveDomainObject{
     public String navn;
@@ -11,12 +12,12 @@ public class Aktivitet extends ActiveDomainObject{
 
 
     public Aktivitet(String navn, String beskrivelse, String maal,
-                     String resultat, Array muskelgrupper){
+                     String resultat, ArrayList muskelgrupper){
         this.navn=navn;
         this.beskrivelse=beskrivelse;
         this.maal=maal;
         this.resultat=resultat;
-        this.muskelgrupper=muskelgrupper;
+        this.muskelgrupper= (Array) muskelgrupper;
     }
 
     //init: gjør tabellen tilgjenglig
@@ -31,7 +32,7 @@ public class Aktivitet extends ActiveDomainObject{
                 beskrivelse = rs.getString("beskrivelse");
                 maal = rs.getString("Mål");
                 resultat = rs.getString("resultat");
-                muskelgrupper = rs.getArray("muskelgrupper");
+                muskelgrupper = rs.getArrayList("muskelgrupper"); // må modifisere i databasen, noe annen grunn til at han klager?
             }
 
         } catch (Exception e) {

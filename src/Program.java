@@ -84,11 +84,7 @@ public class Program extends Application{
                 Treningsoekt navn = new Treningsoekt(notat,dato,luftkvalitet,inne,vaer,prestasjon,varighet);
             }
             else if(valg =="4"){
-                System.out.println("Hvilken vil du hente ut?");
-                navn = scan.nextLine();
-                //??
-                Statement stmt = conn.createStatement();
-                stmt.executeQuery("select * from aktivitet where navn == 'navn'"); //TODO
+               HentUtAktivitet.hentAktivitet();
             }
         }
     }
