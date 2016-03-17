@@ -3,7 +3,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Styrkeoevelse extends Resultat{
-    private int belastning, repitisjoner, sett, resultatID;
+    public int belastning, repitisjoner, sett, resultatID;
 
     public Styrkeoevelse(int resultatID, int oektID, String aktivitetNavn, int repitisjoner, int belastning, int sett, int resultatID1) {
         super(resultatID, oektID, aktivitetNavn);

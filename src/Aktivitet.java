@@ -3,11 +3,11 @@ import java.util.List;
 import java.sql.*;
 
 public class Aktivitet extends ActiveDomainObject{
-    private String navn;
-    private String beskrivelse;
-    private String maal;
-    private String resultat;
-    private Array muskelgrupper;
+    public String navn;
+    public String beskrivelse;
+    public String maal;
+    public String resultat;
+    public Array muskelgrupper;
 
 
     public Aktivitet(String navn, String beskrivelse, String maal,
