@@ -2,9 +2,9 @@ import java.sql.SQLException;
 import java.sql.*;
 
 public class LagAktivitet extends DBConn{
-    private Aktivitet aktivitet;
-    private String navn, beskrivelse, maal, resultat;
-    private Array muskelgrupper;
+    public  Aktivitet aktivitet;
+    public String navn, beskrivelse, maal, resultat;
+    public Array muskelgrupper;
 
     public LagAktivitet() {
         connect();

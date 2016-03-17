@@ -3,11 +3,11 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public class LagTreningsoekt extends DBConn {
-    private Treningsoekt treningsøkt;
-    private LocalDateTime lid;
-    private String notat, luftkvalitet, vaer;
-    private boolean inne;
-    private int prestasjon, varighet;
+    public Treningsoekt treningsøkt;
+    public LocalDateTime lid;
+    public String notat, luftkvalitet, vaer;
+    public boolean inne;
+    public int prestasjon, varighet;
 
     public LagTreningsoekt() {
         connect();
